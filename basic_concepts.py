@@ -1,3 +1,16 @@
+a = [3, 4]
+factors = [1, 2, 3, 4, 6, 8, 12, 24]
+for number in a:
+    for factor in factors:  #
+        print("number: " + str(number) + " factor: " + str(factor))
+        print(factor % number)
+        if factor < number or factor % number != 0:
+            # remove the factor
+            factors.remove(factor)
+
+
+
+
 # tuples - store a sequence of objects that are immutable
 numbers = (1, 2, 3)
 
